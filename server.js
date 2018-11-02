@@ -111,7 +111,7 @@ var Server = function() {
 
         init();
     });
-    server.listen(5000);
+    server.listen(process.env.PORT || 5000);
 }
 
 server = new Server();
